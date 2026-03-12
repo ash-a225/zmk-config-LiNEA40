@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,
+            //スクロール方向を逆転,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -146,7 +146,7 @@
 &kp ESC    &kp N7  &kp N8  &kp N9  &trans                     &trans    &kp TILDE  &kp GRAVE         &trans             &trans
 &kp TAB    &kp N4  &kp N5  &kp N6  &trans                     &kp PLUS  &kp COLON  &kp SEMI          &trans             &kp UNDERSCORE
 &kp SPACE  &kp N1  &kp N2  &kp N3  &trans                     &trans    &kp SQT    &kp LS(DQT)       &kp SQT            &kp BSLH
-&trans     &trans  &kp N0  &trans  &trans  &trans    &kp DEL  &trans               &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE
+&trans     &kp N0  &kp N0  &kp N0  &trans  &trans    &kp DEL  &trans               &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE
             >;
         };
 
