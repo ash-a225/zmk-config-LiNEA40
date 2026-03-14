@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -143,10 +143,10 @@
 
         CTRL {
             bindings = <
-&kp LC(Q)                 &kp LC(W)     &kp LC(E)  &kp LC(R)           &kp LC(T)                                     &kp LC(Y)    &kp LC(U)  &kp LC(I)  &kp LC(O)  &kp LC(P)
-&kp LC(A)                 &kp LC(S)     &kp LC(D)  &kp LC(F)           &kp LC(G)                                     &kp LC(H)    &kp LC(J)  &kp LC(K)  &kp LC(L)  &kp MINUS
-&mt LC(LEFT_SHIFT) LC(Z)  &kp LC(X)     &kp LC(C)  &kp LC(V)           &kp LC(B)                                     &kp LC(N)    &kp LC(M)  &kp COMMA  &kp DOT    &kp SLASH
-&kp LCTRL                 &kp LEFT_WIN  &none      &kp LC(LEFT_SHIFT)  &trans     &lt 4 LANGUAGE_1    &kp BACKSPACE  &lt 3 ENTER             &none      &none      &kp NON_US_BACKSLASH
+&kp LC(Q)                 &kp LC(W)         &kp LC(E)  &kp LC(R)           &kp LC(T)                                     &kp LC(Y)    &kp LC(U)  &kp LC(I)          &kp LC(O)    &kp LC(P)
+&kp LC(A)                 &kp LC(S)         &kp LC(D)  &kp LC(F)           &kp LC(G)                                     &kp LC(H)    &kp LC(J)  &kp LC(K)          &kp LC(L)    &kp LC(MINUS)
+&mt LC(LEFT_SHIFT) LC(Z)  &kp LC(X)         &kp LC(C)  &kp LC(V)           &kp LC(B)                                     &kp LC(N)    &kp LC(M)  &kp LC(COMMA)      &kp LC(DOT)  &kp LC(SLASH)
+&kp LCTRL                 &kp LC(LEFT_WIN)  &none      &kp LC(LEFT_SHIFT)  &trans     &lt 4 LANGUAGE_1    &kp BACKSPACE  &lt 3 ENTER             &kp LC(RIGHT_ALT)  &none        &kp LC(NON_US_BACKSLASH)
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
